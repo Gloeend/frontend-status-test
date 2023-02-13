@@ -1,0 +1,21 @@
+.doors {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  gap: 20px;
+}
+.door:not(:first-child) {
+  margin-left: 15px;
+}
+
+@media screen and (max-width: 1330px) {
+  .doors {
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+}
+
+.mirror {
+  transform: scaleX(1, -1);
+}

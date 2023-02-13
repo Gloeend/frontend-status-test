@@ -1,0 +1,52 @@
+.open {
+  border: none;
+}
+.label {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.item {
+  cursor: pointer;
+}
+
+.close {
+  cursor: pointer;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+.active::before {
+  content: "\2713";
+  left: 5px;
+  margin-top: -3px;
+  position: absolute;
+  display: block;
+  right: 0;
+
+}
+
+.items {
+  z-index: -1000;
+  display: flex;
+  flex-flow: column;
+  opacity: 0;
+  transition: 200ms ease-in-out opacity;
+  gap: 15px;
+  position: absolute;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 25px;
+  width: 100%;
+  left: 0;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 0px 0px 10px 0px rgba(34, 60, 80, 0.2);
+}
+
+.opened {
+  opacity: 1;
+  z-index: 1000;
+}

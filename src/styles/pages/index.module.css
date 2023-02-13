@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1330px) {
+  .container {
+    flex-flow: column;
+  }
+}

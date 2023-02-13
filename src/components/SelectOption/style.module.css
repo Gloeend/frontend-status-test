@@ -1,0 +1,14 @@
+.item {
+  display: flex;
+  justify-content: space-between;
+  white-space: nowrap;
+  width: 100%;
+  gap: 30px;
+}
+.item:not(:last-child) {
+  margin-bottom: 10px;
+}
+.select {
+  text-align: right;
+  cursor: pointer;
+}
