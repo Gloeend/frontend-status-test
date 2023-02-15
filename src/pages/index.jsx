@@ -1,5 +1,5 @@
 import Head from "next/head";
-import c from "@styles/pages/index.module.css";
+import c from "@/styles/pages/index.module.css";
 import Door from "@/components/Door/Door";
 import Params from "@/components/Params/Params";
 
