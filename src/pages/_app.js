@@ -1,4 +1,5 @@
-import "@/styles/globals.css";
+import "@/styles/_reset.css";
+import "@/styles/_globals.css";
 import wrapper from "@/store/door-params";
 
 export function App({ Component, pageProps }) {
