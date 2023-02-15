@@ -1,5 +1,8 @@
-import '@/styles/globals.css'
+import "@/styles/globals.css";
+import wrapper from "@/store/door-params";
 
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export function App({ Component, pageProps }) {
+  return <Component {...pageProps} />;
 }
+
+export default wrapper.withRedux(App);
