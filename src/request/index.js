@@ -20,12 +20,6 @@ export const send = async (data) => {
       opening: data.openingType,
       accessories: accessories(),
       price: data.price
-    },
-    {
-      headers: {
-        "Accept": "application/json",
-        "Content-Type": "application/json",
-      },
     }
   );
 }
