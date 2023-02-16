@@ -10,7 +10,7 @@ export const send = async (data) => {
     return res;
   }
   await axios.post(
-    "http://127.0.0.1:8000/api/create",
+    "http://fstest.d.aa0.ru/public/api/create",
     {
       painting: data.painting.name,
       film: data.film.name,
