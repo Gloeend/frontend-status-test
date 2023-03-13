@@ -6,4 +6,6 @@ export function App({ Component, pageProps }) {
   return <Component {...pageProps} />;
 }
 
+console.log("test");
+
 export default wrapper.withRedux(App);
